@@ -28,38 +28,23 @@
 
   <body>
     <nav class="navbar bg-info">
-      <a class="navbar-brand text-light p-3" href="/">Note Taker </a>
-      <div class="icons">
+      <a class="navbar-brand text-light p-3" href="/notes">Note Taker</a>
+      <a class="navbar-brand text-light p-3" href="#">Recently Deleted</a>
+      <!-- <div class="icons">
         <i class="fas fa-save text-light save-note"></i>
         <i class="fas fa-plus text-light new-note"></i>
-      </div>
+      </div> -->
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4 list-container">
+        <div class="col list-container">
           <div class="card">
-            <div class="list-group custom-sidebar scrollarea"></div>
-            <footer class="custom-sidebar-footer list-group-item">
-              <a
-                href="/recently-deleted"
-                class="text-decoration-none fst-italic"
-                >Recently Deleted</a
-              >
-            </footer>
+            <div class="list-group"></div>
           </div>
-        </div>
-        <div class="col-8">
-          <input
-            class="note-title"
-            placeholder="Note Title"
-            maxlength="28"
-            type="text"
-          />
-          <textarea class="note-textarea" placeholder="Note Text"></textarea>
         </div>
       </div>
     </div>
 
-    <script type="module" src="/assets/js/index.js"></script>
+    <script type="module" src="/assets/js/recently-deleted.js"></script>
   </body>
 </html>

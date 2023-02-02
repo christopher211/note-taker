@@ -22,7 +22,7 @@ notesRouter.post("/", (req, res) => {
     const newNote = {
       title,
       text,
-      id: Math.floor(Math.random() * 100000),
+      id: `${Math.floor(Math.random() * 100000)}`,
       status: 1,
     };
 
